@@ -106,7 +106,7 @@
 				<p>If you want to find old archived Hull Ecos from before 2017, you can find them <a href="http://www.cargo.org.uk/hulleco/index.html#">here</a>.</p>
 			</div>
 		</div>
-		<div class="row h-100 mt-5 ml-5">
+		<div class="row h-100 ml-5">
 			<?php
 				/*function findLatest($date1, $date2) {
 					 if (strtotime($time1) < strtotime($time2)) 
@@ -129,6 +129,9 @@
 					echo "<br/><br/><br/>Sorry, but we were not able to find any newsletters. Perhaps try the <a href='current_newsletter.php'> Current Newsletters </a> page?";
 				}
 				else {
+					
+					echo "<ul class='issuesList'>";
+					
 					//usort($files, "findLatest");
 
 					foreach ($files as $key => $value) {
@@ -138,12 +141,16 @@
 						else {
 							$value = pathinfo($value, PATHINFO_FILENAME);
 
-							echo "<dir id='issue '" . $value . "' class='row' style='background-color: white; margin: 0;'>";
+							/*echo "<dir id='issue '" . $value . "' class='row' style='background-color: white; margin: 0;'>";
 							echo "Download or view: ";
 							echo "<a href='newsletters/" . $value . ".pdf' target='_blank'>  Issue " . $value . "</a>";
-							echo "</dir>";
+							echo "</dir>";*/
+							
+							echo "<li class='item'>" . "<a href='newsletters/" . $value . ".pdf' target='_blank'>  Issue Date: " . $value . "</a>" . "</li>";
 						}
 					}
+					
+					echo "</ul>";
 				}
 			?>
 		</div>
