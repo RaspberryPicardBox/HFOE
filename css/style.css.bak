@@ -1,0 +1,163 @@
+    #wrapper {
+		font-family: "Monospace";
+	}
+	
+	#header {
+		background-image: url("../images/bg.jpg");
+		height: 30%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: solid;
+	}
+
+	#nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		font-size: 2vw;
+		position: -webkit-sticky;
+		position: sticky;
+	}
+
+	#nav li {
+		display: inline-block;
+		width: auto;
+	}
+
+	#nav li a {
+		display: block;
+		color: #fff;
+		text-align: justify;
+		padding: 14px 16px;
+		text-decoration: none;
+		white-space: nowrap ;
+	}
+
+	#nav li a:hover {
+		display: block;
+		color: #141414;
+		text-align: justify;
+		padding: 14px 16px;
+		text-decoration: none;
+		white-space: nowrap ;
+	}
+
+	#nav li.right {
+		float: right;
+		padding-top: 10px;
+	}
+
+	#content {
+		background-image: url("../images/contentbg.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		font-size: 1.5vw;
+	}
+
+	#content h1 {
+		margin-top: 0px;
+		padding-top: 1%;
+	}
+
+	#contentLeft {
+		float: left;
+		margin-left: 10px;
+		width: 49%;
+		height: 90%;
+	}
+
+	#contentLeft p {
+		color: #fff;
+	}
+
+	#contentRight {
+		float: right;
+		width: 49%;
+		height: 90%;
+	}
+
+	#contentRight p {
+		color: #fff;
+	}
+
+	#footer {
+		width: 100%;
+		font-size: 1vw;
+		background-color: #e3e3e3;
+	}
+
+	#footer p {
+		padding-top: 5px;
+		margin-top: 0px;
+	}
+
+	#footer .f_link {
+		width: 5%;
+	}
+
+	#footer .f_link_copyright {
+			width: 1%;
+	}
+
+	#footerLeft {
+		float: left;
+		margin-left: 10px;
+		width: 49%;
+	}
+
+	#footerRight {
+		float: right;
+		margin-right: 10px;
+		text-align: right;
+		width: 49%;
+	}
+
+	@media screen and (max-width: 800px) {
+		#header {
+			height: 50%;
+		}
+		
+		#nav {
+			max-width: 50%;
+		}
+
+		#nav li {
+			display: block;
+		}
+
+		#nav li a {
+			padding: 0;
+		}
+
+		#nav li a:hover {
+			padding: 0;
+		}
+
+		#nav li.right {
+			float: none;
+		}
+
+		#nav li.image {
+			width: 10%;
+		}
+
+		#nav ul {
+			font-size: 5vw;
+		}
+
+		#content {
+			font-size: 3vw;
+		}
+
+		#footer {
+			font-size: 2vw;
+		}
+
+		#footer .f_link_copyright {
+			width: 2%;
+		}
+	}

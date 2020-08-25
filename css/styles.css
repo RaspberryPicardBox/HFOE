@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+ transition: background 0.5s ease-in-out;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/bg.jpg");
+
+  /* Set a specific height & width */
+  height: 500px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
